@@ -1,4 +1,4 @@
-//Êä³ö100-999ÖĞËùÓĞË®ÏÉ»¨Êı£¬ÈôÈıÎ»ÊıÂú×ã ABC = A^3 + B^3 + C^3£¬Ôò³ÆÆäÎªË®ÏÉ»¨Êı
+//è¾“å‡º100-999ä¸­æ‰€æœ‰æ°´ä»™èŠ±æ•°ï¼Œè‹¥ä¸‰ä½æ•°æ»¡è¶³ ABC = A^3 + B^3 + C^3ï¼Œåˆ™ç§°å…¶ä¸ºæ°´ä»™èŠ±æ•°
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -6,7 +6,7 @@ using namespace std;
 bool isDaffodil(int n)
 {
 	int sum = 0;
-	int temp = n;         //ÒòÎªnÔÚºóÃæµÄÔËËãÖĞ»á±»¸Ä±ä£¬Òò´ËÒªÊ¹ÓÃtempÀ´±£´æn³õÊ¼µÄÖµ 
+	int temp = n;         //å› ä¸ºnåœ¨åé¢çš„è¿ç®—ä¸­ä¼šè¢«æ”¹å˜ï¼Œå› æ­¤è¦ä½¿ç”¨tempæ¥ä¿å­˜nåˆå§‹çš„å€¼ 
 	for(int i=0; i<3; i++){
 		sum += pow((temp%10),3);
 		temp /= 10;
@@ -23,3 +23,21 @@ int main()
 	}	
 	return 0;
 } 
+
+//è§£æ³•äºŒ 
+//int decom(int n){
+//	int high = n/10/10;
+//	int mid = n/10%10;
+//	int low = n%10;
+//	return pow(high,3)+pow(mid,3)+pow(low,3);
+//}
+//
+//int main()
+//{
+//	for(int i=100; i<999; i++){
+//		if(i==decom(i))
+//			cout << i << endl;
+//	}
+//	
+//	return 0;
+//} 
