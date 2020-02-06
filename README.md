@@ -1,1 +1,1 @@
-# algorithm_exer
+# purple book solo  
